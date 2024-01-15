@@ -16,6 +16,8 @@
 
 ### Tavour (Beer) *May 2021 - Sep 2021*
 #### Senior Software Engineer
+- Dropped barriers to re-engagement by adding support for Single Sign-On to the flagship mobile application
+- Increased synchronization between engineering and product orgs by automating iOS test builds within a PR
 
 ### Curalate / Bazaarvoice (Social Media / E-Commerce) *March 2019 - Apr 2021*
 #### Software Engineer - Gallery Experiences
