@@ -10,13 +10,15 @@ import { hideBin } from 'yargs/helpers'
 import {reporter} from 'vfile-reporter'
 import path from 'path'
 
-const { filePath } = yargs(hideBin(process.argv))
-    .string('filePath')
-    .demandOption('filePath')
+const { inFile } = yargs(hideBin(process.argv))
+    .string('inFile')
+    .describe('inFile', 'A path to a markdown file')
+    .normalize('inFile')
+    .demandOption('inFile')
     .parseSync()
 
-const inFile = fs.readFileSync(
-    filePath,
+const fileContents = fs.readFileSync(
+    inFile,
     { encoding: 'utf-8' }
 )
 
@@ -26,7 +28,7 @@ const file = await unified()
   .use(rehypeDocument, {title: 'John Simoni'})
   .use(rehypeFormat)
   .use(rehypeStringify)
-  .process(inFile)
+  .process(fileContents)
 
 console.error(reporter(file))
 

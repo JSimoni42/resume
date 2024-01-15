@@ -1,7 +1,7 @@
 # John Simoni
 **Senior Software Developer** in Seattle, WA
 
-[Email](mailto://jsimoni03@gmail.com) | [LinkedIn](https://www.linkedin.com/in/johnsimoni/) | [Personal Site](https://jsimoni42.github.io)
+[Email](mailto://jsimoni03@gmail.com) | [Phone](tel://+15167803526) | [LinkedIn](https://www.linkedin.com/in/johnsimoni/) | [Personal Site](https://jsimoni42.github.io)
 
 ---
 
