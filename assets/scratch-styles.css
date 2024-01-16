@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8px;
+    position: relative;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+h4, h5 {
+    margin-bottom: 0;
+}
+
+h5 {
+    margin-top: 0;
+}
+
+hr {
+    width: 80px;
+    margin-left: 0;
+    border: none;
+    border-top: 3px rgb(39, 38, 38) solid;
+}
+
+a {
+    color: black;
+}
+
+#phone::marker {
+    content: '📞 '
+}
+
+#email::marker {
+    content: '📧 '
+}
+
+#linkedin::marker {
+    content: '🔗 '
+}
+
+#website::marker {
+    content: '🌐 '
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+}
+
+#accent-bar {
+    background-color: rgb(235, 228, 228);
+    width: 45%;
+    bottom: 0;
+    top: 50px;
+    position: absolute;
+    z-index: -1;
+}
