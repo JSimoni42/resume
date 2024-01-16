@@ -10,6 +10,10 @@ import { hideBin } from 'yargs/helpers'
 import {reporter} from 'vfile-reporter'
 import path from 'path'
 import * as sass from 'sass'
+import remarkGfm from 'remark-gfm'
+
+// @ts-expect-error remark-heading-id has no types
+import remarkHeadingId from 'remark-heading-id'
 
 const { resume, stylesheet } = yargs(hideBin(process.argv))
     .string([ 'resume', 'stylesheet' ])
@@ -36,6 +40,8 @@ if (stylesheet) {
 
 const file = await unified()
   .use(remarkParse)
+  .use(remarkGfm)
+  .use(remarkHeadingId)
   .use(remarkRehype)
   .use(rehypeDocument, {
     title: 'John Simoni', 
@@ -43,7 +49,7 @@ const file = await unified()
     link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;0,700&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap' }
     ],
 })
   .use(rehypeFormat)
