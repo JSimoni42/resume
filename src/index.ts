@@ -9,23 +9,35 @@ import yargs from 'yargs/yargs'
 import { hideBin } from 'yargs/helpers'
 import {reporter} from 'vfile-reporter'
 import path from 'path'
+import * as sass from 'sass'
 
-const { inFile } = yargs(hideBin(process.argv))
-    .string('inFile')
-    .describe('inFile', 'A path to a markdown file')
-    .normalize('inFile')
-    .demandOption('inFile')
+const { resume, stylesheet } = yargs(hideBin(process.argv))
+    .string([ 'resume', 'stylesheet' ])
+    .describe({
+        resume: 'A path to a resume written in markdown',
+        stylesheet: 'The styles to apply to the resume, written in Sass'
+    })
+    .normalize([ 'resume', 'stylesheet' ])
+    .demandOption('resume')
+    .strict(true)
     .parseSync()
 
 const fileContents = fs.readFileSync(
-    inFile,
+    resume,
     { encoding: 'utf-8' }
 )
+
+if (stylesheet) {
+    fs.writeFileSync(
+        path.join('assets', 'styles.css'),
+        sass.compile(stylesheet).css
+    )
+}
 
 const file = await unified()
   .use(remarkParse)
   .use(remarkRehype)
-  .use(rehypeDocument, {title: 'John Simoni'})
+  .use(rehypeDocument, {title: 'John Simoni', css: './styles.css'})
   .use(rehypeFormat)
   .use(rehypeStringify)
   .process(fileContents)
