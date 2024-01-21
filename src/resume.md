@@ -1,8 +1,6 @@
 # John Simoni
 **Senior Software Developer** in Seattle, WA
 
-[Email](mailto://jsimoni03@gmail.com) | [Phone](tel://+15167803526) | [LinkedIn](https://www.linkedin.com/in/johnsimoni/) | [Personal Site](https://jsimoni42.github.io)
-
 ---
 
 :::main{#experience-section}
@@ -30,6 +28,14 @@
 
 
 :::aside{#superlatives}
+
+## Contact Information
+:::div{#contact-bullets}
+- [jsimoni03@gmail.com](mailto://jsimoni03@gmail.com)
+- [+1 (516) 780-3526](tel://+15167803526)
+- [LinkedIn](https://www.linkedin.com/in/johnsimoni/)
+- [Personal Website](https://jsimoni42.github.io)
+:::
 
 ## Personal Superlatives 
 - Russian Language & Literature Enthusiast
