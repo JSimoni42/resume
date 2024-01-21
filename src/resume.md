@@ -5,8 +5,9 @@
 
 ---
 
-## Experience {#experience-section}
+:::main{#experience-section}
 
+## Experience 
 ### Hiya (Telecom) *Nov. 2021 - Present* 
 #### Senior Software Engineer - Call Intelligence
 - Drove marketing funnel engagement by developing & deploying a web app that demonstrates the value of branded call. 
@@ -25,6 +26,13 @@
 - Helped users deploy social content more confidently by building a page that showed mobile and desktop previews. 
 - Connected backend and frontend engineers by automating TypeScript type-generation of Scala APIs
 
-## Personal Superlatives
+:::
+
+
+:::aside{#superlatives}
+
+## Personal Superlatives 
 - Russian Language & Literature Enthusiast
 - Avid Fan of Two-Plank and Two-Wheeled Sports
+
+:::

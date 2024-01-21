@@ -3,3 +3,13 @@ body {
     max-width: 750px;
     margin: 0 auto;
 }
+
+// Decrease job-header spacing
+h3 {
+    margin-bottom: 3px;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
