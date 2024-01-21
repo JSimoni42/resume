@@ -5,8 +5,6 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import {Processor, unified, Plugin} from 'unified'
 import fs from 'fs'
-import yargs from 'yargs/yargs'
-import { hideBin } from 'yargs/helpers'
 import path from 'path'
 import * as sass from 'sass'
 import remarkGfm from 'remark-gfm'
@@ -18,6 +16,8 @@ import remarkDirective from 'remark-directive'
 // @ts-expect-error remark-heading-id has no types
 import remarkHeadingId from 'remark-heading-id'
 
+// Copies attributes for contianer directives
+// Currently used to assign `id` attributes
 const directiveParser: Plugin = () => (tree) => {
     visit(
         tree, 
@@ -40,26 +40,26 @@ const directiveParser: Plugin = () => (tree) => {
     )
 }
 
-const { resume, stylesheet } = yargs(hideBin(process.argv))
-    .string([ 'resume', 'stylesheet' ])
-    .describe({
-        resume: 'A path to a resume written in markdown',
-        stylesheet: 'The styles to apply to the resume, written in Sass'
-    })
-    .normalize([ 'resume', 'stylesheet' ])
-    .demandOption('resume')
-    .strict(true)
-    .parseSync()
 
-if (stylesheet) {
-    fs.writeFileSync(
-        path.join('assets', 'styles.css'),
-        sass.compile(stylesheet).css
+// Compile SASS
+fs.writeFileSync(
+    path.join('assets', 'styles.css'),
+    sass.compile(
+        path.join('src', 'style.scss')
+    ).css
+)
+
+// Copy Favicon
+fs.createReadStream(
+    path.join('src', 'mountain-sun.ico')
+).pipe(
+    fs.createWriteStream(
+        path.join('assets', 'favicon.ico')
     )
-}
+)
 
 const resumeStream = fs.createReadStream(
-    resume,
+    path.join('src', 'resume.md'),
     { encoding: 'utf-8' }
 )
 
@@ -80,6 +80,7 @@ const unifiedProcessor: Processor = unified()
     title: 'John Simoni', 
     css: './styles.css',
     link: [
+        { href: './favicon.ico', rel: 'icon' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap' }
