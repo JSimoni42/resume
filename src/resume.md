@@ -14,7 +14,7 @@
 - Expanded our application's deployment options by developing an Android app to record an incoming call.
 - Increased the scalability and resiliency of our physically-hosted application by searching for and integrating with a cloud-hosted provider.
 
-### Tavour (Beer) *May 2021 - Sep 2021*
+### Tavour (Craft Beer) *May 2021 - Sep 2021*
 #### Senior Software Engineer
 - Dropped barriers to re-engagement by adding support for Single Sign-On to the flagship mobile application
 - Increased synchronization between engineering and product orgs by automating iOS test builds within a PR
