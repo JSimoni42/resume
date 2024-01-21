@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "ts-node --esm src/index.ts",
+    "build": "ts-node --esm src/index.ts --resume src/resume.md --stylesheet src/style.scss",
     "run-server": "http-server assets",
     "watch": "nodemon --watch src --ext 'ts md scss' --exec 'npm run build'"
   },
