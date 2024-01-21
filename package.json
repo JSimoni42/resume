@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "ts-node --esm src/index.ts",
-    "run-server": "http-server assets"
+    "run-server": "http-server assets",
+    "watch": "nodemon --watch src --ext 'ts md scss' --exec 'npm run build'"
   },
   "author": "",
   "license": "ISC",
