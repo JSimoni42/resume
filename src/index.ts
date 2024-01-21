@@ -19,9 +19,11 @@ import remarkDirective from 'remark-directive'
 import remarkHeadingId from 'remark-heading-id'
 
 const directiveParser: Plugin = () => (tree) => {
-    visit(tree, (node) => {
-        // Lines that start with ':::' are containers
-        if (node.type === 'containerDirective') {
+    visit(
+        tree, 
+        (node) => node.type ==='containerDirective', 
+        (node) => {
+            // Lines that start with ':::' are containers
             if (!node.data) {
                 node.data = {}
             }
@@ -34,8 +36,8 @@ const directiveParser: Plugin = () => (tree) => {
             data.hName = hast.tagName
             //@ts-expect-error These types don't work
             data.hProperties = hast.properties
-        }
-    })
+        },
+    )
 }
 
 const { resume, stylesheet } = yargs(hideBin(process.argv))
