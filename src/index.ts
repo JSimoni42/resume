@@ -3,14 +3,14 @@ import rehypeFormat from 'rehype-format'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
-import {unified} from 'unified'
+import {Processor, unified} from 'unified'
 import fs from 'fs'
 import yargs from 'yargs/yargs'
 import { hideBin } from 'yargs/helpers'
-import {reporter} from 'vfile-reporter'
 import path from 'path'
 import * as sass from 'sass'
 import remarkGfm from 'remark-gfm'
+import { stream } from 'unified-stream'
 
 // @ts-expect-error remark-heading-id has no types
 import remarkHeadingId from 'remark-heading-id'
@@ -26,11 +26,6 @@ const { resume, stylesheet } = yargs(hideBin(process.argv))
     .strict(true)
     .parseSync()
 
-const fileContents = fs.readFileSync(
-    resume,
-    { encoding: 'utf-8' }
-)
-
 if (stylesheet) {
     fs.writeFileSync(
         path.join('assets', 'styles.css'),
@@ -38,7 +33,18 @@ if (stylesheet) {
     )
 }
 
-const file = await unified()
+const resumeStream = fs.createReadStream(
+    resume,
+    { encoding: 'utf-8' }
+)
+
+const outStream = fs.createWriteStream(
+    path.join('assets', 'resume.html'),
+    { encoding: 'utf-8' }
+)
+
+// @ts-expect-error These types don't line up. `Processor` has `undefined` for type arguments
+const unifiedProcessor: Processor = unified()
   .use(remarkParse)
   .use(remarkGfm)
   .use(remarkHeadingId)
@@ -54,12 +60,8 @@ const file = await unified()
 })
   .use(rehypeFormat)
   .use(rehypeStringify)
-  .process(fileContents)
 
-console.error(reporter(file))
-
-fs.writeFileSync(
-    path.join('assets', 'resume.html'),
-    String(file),
-    { encoding: 'utf-8' }
-)
+resumeStream
+    .on('error', (e) => console.error(e))
+    .pipe(stream(unifiedProcessor))
+    .pipe(outStream)
