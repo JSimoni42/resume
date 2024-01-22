@@ -20,7 +20,7 @@ body {
         grid-area: personal;
         background-color: orange;
         padding-left: 4px;
-        padding-right: 4px;
+        padding-right: 8px;
     }
 }
 
@@ -31,6 +31,11 @@ h1, h3, h4, h5 {
 
 h4, h5 {
     margin-top: 0px;
+}
+
+// Removes 'visited' link color
+a {
+    color: black;
 }
 
 // Change icons of contact bullets
@@ -47,8 +52,17 @@ h4, h5 {
     li:nth-child(4)::marker {
         content: '🌐 '
     }
+}
 
-    a {
-        color: black;
+// Change icons of hobby bullets
+#hobby-bullets ul {
+    li:nth-child(1)::marker {
+        content: '🎿 '
+    }
+    li:nth-child(2)::marker {
+        content: '🚲 '
+    }
+    li:nth-child(3)::marker {
+        content: '📼 '
     }
 }

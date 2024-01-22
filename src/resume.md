@@ -57,13 +57,28 @@
 :::
 
 ### Education 
-- **Colgate University**
+**Colgate University**
 Major in Computer Science,
 minor in Russian & Eurasian Studies
 
 ### Hobbies
+:::div{#hobby-bullets}
 - Skiing in all shapes and sizes
 - Gravel cycling
+- Old movies
+:::
+
+### Personal Projects
+
+#### [Markdown Resume](https://github.com/JSimoni42/resume)
+
+- Connects text-processing tools to transform a resume from Markdown into something presentable.
+- Used to build this resume!
+
+#### [Dependency Visualizer](https://github.com/JSimoni42/dependency-visualizer)
+
+- Combines AST-Parsing and Augmented Reality to show JavaScript module dependencies in 3-D.
+
 
 ::::
 
