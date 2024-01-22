@@ -1,14 +1,17 @@
 import puppeteer from 'puppeteer'
 
-const browser = await puppeteer.launch();
+const browser = await puppeteer.launch({
+    headless: 'new'
+});
 const page = await browser.newPage();
-await page.goto("http://localhost:8080/resume.html")
+await page.goto("http://localhost:8080/resume.html", { waitUntil: 'networkidle0' })
 await page.setViewport({width: 1080, height: 1024})
 
 await new Promise(async (resolve, reject) => {
     const pdfStream = await page.createPDFStream({
         printBackground: true,
-        format: 'Letter'
+        format: 'Letter',
+        pageRanges: '1'
     })
     pdfStream 
         .on('error', reject)

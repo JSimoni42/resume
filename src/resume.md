@@ -31,6 +31,14 @@
 - Helped users deploy social content more confidently by building a page that showed mobile and desktop previews. 
 - Connected backend and frontend engineers by automating TypeScript type-generation of Scala APIs.
 - Improved code quality by introducing React tests on our frontend.
+- Onboarded new teams onto the codebase by leading knowledge-transfer sessions.
+
+### Lucidoc (Document Compliance)
+#### Software Engineer - General
+##### Feb 2018 - Feb 2019
+- Increased document search speed by 10x through OracleDB query optimizations.
+- Modernized the application stack by translating code from Perl & Template Toolkit to NodeJS & React.
+- Maintained customer relationships by handling support requests, directly interfacing with customers when necessary.
 
 ::::
 
