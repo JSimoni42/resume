@@ -1,25 +1,38 @@
 :::::div{#content}
 
-:::div{#experience-section}
+::::div{#experience-section}
 ## Experience 
-### Hiya (Telecom) *Nov. 2021 - Present* 
-#### Senior Software Engineer - Call Intelligence
-- Drove marketing funnel engagement by developing & deploying a web app that demonstrates the value of branded call. 
+### Hiya (Telecom)  
+:::div{.job-header}
+#### Senior Software Engineer - Call Intelligence 
+##### Nov. 2021 - Present
+:::
+- Drove marketing funnel engagement by developing & deploying a web app that demonstrates the value of branded calling. 
 - Increased our team's deployment velocity by removing manual steps from our team's deployment pipeline & building a staging environment.
 - Expanded our application's deployment options by developing an Android app to record an incoming call.
 - Increased the scalability and resiliency of our physically-hosted application by searching for and integrating with a cloud-hosted provider.
+- Mentored a summer intern, coaching them through technical hurdles while providing them with a variety of challenges to fuel their growth.
+- Improved observability across our team's stack by adding distributed metrics and logging.
 
-### Tavour (Craft Beer) *May 2021 - Sep 2021*
-#### Senior Software Engineer
-- Dropped barriers to re-engagement by adding support for Single Sign-On to the flagship mobile application
-- Increased synchronization between engineering and product orgs by automating iOS test builds within a PR
+### Tavour (Craft Beer) 
+:::div{.job-header}
+#### Senior Software Engineer 
+##### May 2021 - Sep 2021
+:::
+- Dropped barriers to re-engagement by adding support for Single Sign-On to the flagship mobile application.
+- Increased synchronization between engineering and product orgs by automating iOS test builds within a PR.
 
-### Curalate / Bazaarvoice (Social Media / E-Commerce) *March 2019 - Apr 2021*
+### Curalate / Bazaarvoice (Social Media / E-Commerce) 
+:::div{.job-header}
 #### Software Engineer - Gallery Experiences
+##### March 2019 - Apr 2021
+:::
 - Made shopping pages more customizable by allowing social media managers to manually arrange images.
 - Helped users deploy social content more confidently by building a page that showed mobile and desktop previews. 
-- Connected backend and frontend engineers by automating TypeScript type-generation of Scala APIs
-:::
+- Connected backend and frontend engineers by automating TypeScript type-generation of Scala APIs.
+- Improved code quality by introducing React tests on our frontend.
+
+::::
 
 ::::div{#personal-section}
 # John Simoni
@@ -35,9 +48,15 @@
 - [Personal Website](https://jsimoni42.github.io)
 :::
 
-### Personal Superlatives 
-- Russian Language & Literature Enthusiast
-- Avid Skiier and Cyclist
+### Education 
+- **Colgate University**
+Major in Computer Science,
+minor in Russian & Eurasian Studies
+
+### Hobbies
+- Skiing in all shapes and sizes
+- Gravel cycling
+
 ::::
 
 :::::

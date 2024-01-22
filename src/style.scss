@@ -25,13 +25,12 @@ body {
 }
 
 // Decrease job-header spacing
-h1, h3 {
+h1, h3, h4, h5 {
     margin-bottom: 3px;
 }
 
-h4 {
+h4, h5 {
     margin-top: 0px;
-    margin-bottom: 12px;
 }
 
 // Change icons of contact bullets
