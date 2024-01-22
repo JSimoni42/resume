@@ -37,7 +37,7 @@
 
 ## Personal Superlatives 
 - Russian Language & Literature Enthusiast
-- Avid Fan of Two-Plank and Two-Wheeled Sports
+- Avid Skiier and Cyclist
 ::::
 
 :::::
