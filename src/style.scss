@@ -1,11 +1,30 @@
+// General page spacing
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 750px;
     margin: 0 auto;
 }
 
+// Content spacing
+#content {
+    display: grid;
+    grid-template-areas: "personal experience";
+    grid-template-columns: 256px 1fr;
+    column-gap: 12px;
+
+    #experience-section {
+        grid-area: experience;
+    }
+
+    #personal-section {
+        grid-area: personal;
+        background-color: orange;
+        padding-left: 4px;
+    }
+}
+
 // Decrease job-header spacing
-h3 {
+h1, h3 {
     margin-bottom: 3px;
 }
 

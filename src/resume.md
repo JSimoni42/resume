@@ -3,8 +3,9 @@
 
 ---
 
-:::main{#experience-section}
+:::::div{#content}
 
+:::div{#experience-section}
 ## Experience 
 ### Hiya (Telecom) *Nov. 2021 - Present* 
 #### Senior Software Engineer - Call Intelligence
@@ -23,12 +24,9 @@
 - Made shopping pages more customizable by allowing social media managers to manually arrange images.
 - Helped users deploy social content more confidently by building a page that showed mobile and desktop previews. 
 - Connected backend and frontend engineers by automating TypeScript type-generation of Scala APIs
-
 :::
 
-
-:::aside{#superlatives}
-
+::::div{#personal-section}
 ## Contact Information
 :::div{#contact-bullets}
 - [jsimoni03@gmail.com](mailto://jsimoni03@gmail.com)
@@ -40,5 +38,6 @@
 ## Personal Superlatives 
 - Russian Language & Literature Enthusiast
 - Avid Fan of Two-Plank and Two-Wheeled Sports
+::::
 
-:::
+:::::
