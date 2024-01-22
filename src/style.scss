@@ -20,6 +20,7 @@ body {
         grid-area: personal;
         background-color: orange;
         padding-left: 4px;
+        padding-right: 4px;
     }
 }
 
@@ -36,15 +37,19 @@ h4 {
 // Change icons of contact bullets
 #contact-bullets ul {
     li:nth-child(1)::marker {
-        content: '📞 '
+        content: '📧 '
     }
     li:nth-child(2)::marker {
-        content: '📧 '
+        content: '📞 '
     }
     li:nth-child(3)::marker {
         content: '🔗 '
     }
     li:nth-child(4)::marker {
         content: '🌐 '
+    }
+
+    a {
+        color: black;
     }
 }

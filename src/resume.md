@@ -1,8 +1,3 @@
-# John Simoni
-**Senior Software Developer** in Seattle, WA
-
----
-
 :::::div{#content}
 
 :::div{#experience-section}
@@ -27,7 +22,12 @@
 :::
 
 ::::div{#personal-section}
-## Contact Information
+# John Simoni
+**Senior Software Developer**
+
+---
+
+### Contact Information
 :::div{#contact-bullets}
 - [jsimoni03@gmail.com](mailto://jsimoni03@gmail.com)
 - [+1 (516) 780-3526](tel://+15167803526)
@@ -35,7 +35,7 @@
 - [Personal Website](https://jsimoni42.github.io)
 :::
 
-## Personal Superlatives 
+### Personal Superlatives 
 - Russian Language & Literature Enthusiast
 - Avid Skiier and Cyclist
 ::::
