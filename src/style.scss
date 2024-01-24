@@ -1,8 +1,9 @@
 // General page spacing
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 815px;
+    max-width: 816px;
     margin: 0 auto;
+    height: 1054px;
 }
 
 // Content spacing
@@ -11,6 +12,7 @@ body {
     grid-template-areas: "personal experience";
     grid-template-columns: 256px 1fr;
     column-gap: 12px;
+    height: 100%;
 
     #experience-section {
         grid-area: experience;
