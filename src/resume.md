@@ -2,42 +2,36 @@
 
 ::::div{#experience-section}
 ## Experience 
-### Hiya (Telecom)  
+### Hiya - Spam Protection and Branded Calling Platform
 :::div{.job-header}
-#### Senior Software Engineer - Call Intelligence 
+#### Senior Software Engineer
 ##### Nov. 2021 - Present
 :::
-- Drove marketing funnel engagement by developing & deploying a web app that demonstrates the value of branded calling. 
-- Increased our team's deployment velocity by removing manual steps from our team's deployment pipeline & building a staging environment.
-- Expanded application deployment options by developing an Android app that records an incoming call.
-- Increased the scalability and resiliency of our physically-hosted application by searching for and integrating with a cloud-hosted provider.
-- Improved observability across our team's applications by adding a distributed metrics and logging pipeline.
-- Served as primary technical mentor for a summer intern; created an internship project and met regularly to discuss technical challenges.
+- Developed and deployed a static website to demonstrate the value of branded calling; increasing volume of the pre-sales pipeline.
+- Revamped our team's deployment pipleine by building a staging environment and automating workflows; increasing deployment velocity and confidence.
+- Developed an Android app to create a lightweight deployment option for our marketing analytics application; shortening the setup process from weeks to days.
+- Increased the scalability and resiliency of our physically-hosted application by integrating with a cloud-hosted provider; enabling my team to deploy our application in countries where Hiya does not have an office.
+- Improved observability across my team's applications by adding a distributed metrics and logging pipeline.
+- Served as primary technical mentor for a summer intern; creating an internship project and meeting regularly to discuss technical challenges.
 
-### Tavour (Craft Beer) 
+### Tavour - Craft Beer Marketplace
 :::div{.job-header}
 #### Senior Software Engineer 
 ##### May 2021 - Sep 2021
 :::
-- Increased customer acquisition funnel by adding support for Single Sign-On to the flagship mobile application.
-- Increased synchronization between engineering and product orgs by automating iOS test builds within a PR.
+- Added support for registration & sign-in via single sign-on to the consumer marketplace mobile app; reducing user churn and increasing customer acquisition.
+- Automated creating iOS development builds via a GitHub comment; enabling product and engineering to get on the same page about what changes were on the horizon.
 
-### Curalate / Bazaarvoice (Social Media / E-Commerce) 
+### Curalate / Bazaarvoice - Social Media Marketing Platform
 :::div{.job-header}
-#### Software Engineer - Gallery Experiences
+#### Software Engineer
 ##### March 2019 - Apr 2021
 :::
-- Made shopping pages more customizable by allowing social media managers to manually arrange images.
-- Helped users deploy social content more confidently by building a page that showed mobile and desktop previews. 
-- Connected backend and frontend engineers by automating TypeScript type-generation of Scala APIs.
-- Improved code quality by introducing React tests on our frontend.
-- Onboarded new teams onto the codebase by leading knowledge-transfer sessions during Curalate's acquisition by Bazaarvoice.
-
-### Lucidoc (Document Compliance)
-#### Software Engineer - General
-##### Feb 2018 - Feb 2019
-- Increased document search speed by 10x through OracleDB query optimizations.
-- Modernized the application stack by translating code from Perl & Template Toolkit to NodeJS & React.
+- Built a feature to allow social media marketers to manually arrange social content on their product pages; enabling them to customize pieces of content for specific marketing campaigns.
+- Revamped a rights request workflow that was impacted by Instagram API deprecations; enabling social media managers to continue finding and requesting permission to use Instagram content.
+- Made frontend developers' lives easier by introducing automation to remove the need for engineers to manually write client-facing types for backend APIs; an odious and error-prone process.
+- Introduced a new frontend testing framework to replace one being used in deprecated code; ensuring that our frontend application stayed robust as we migrated away from the deprecated code.
+- Onboarded new employees onto my team's codebase by leading knowledge-transfer sessions during Curalate's acquisition by Bazaarvoice.
 
 ::::
 
