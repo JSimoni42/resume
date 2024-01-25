@@ -31,7 +31,7 @@
 - Revamped a rights request workflow that was impacted by Instagram API deprecations; enabling social media managers to continue finding and requesting permission to use Instagram content.
 - Made frontend developers' lives easier by introducing automation to remove the need for engineers to manually write client-facing types for backend APIs; an odious and error-prone process.
 - Introduced a new frontend testing framework to replace one being used in deprecated code; ensuring that our frontend application stayed robust as we migrated away from the deprecated code.
-- Onboarded new employees onto my team's codebase by leading knowledge-transfer sessions during Curalate's acquisition by Bazaarvoice.
+- Lead knowledge transfer sessions to onboard new employees during Curalate's acquisition by Bazaarvoice.
 
 ::::
 
