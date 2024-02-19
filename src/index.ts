@@ -40,6 +40,9 @@ const directiveParser: Plugin = () => (tree) => {
     )
 }
 
+if (!fs.existsSync('assets')) {
+    fs.mkdirSync('assets')
+}
 
 // Compile SASS
 fs.writeFileSync(
